@@ -68,7 +68,7 @@ func NewCustomConsulClient(config *ServiceRegistryConfig) ServiceRegistry {
 	// 配置、连接consul
 	cfg := api.DefaultConfig()
 	cfg.Address = fmt.Sprintf("%s:%d", config.Host, config.Port)
-	//// todo
+	// todo
 	//cfg.Transport = &http.Transport{
 	//	Proxy: http.ProxyFromEnvironment,
 	//	DialContext: (&net.Dialer{
