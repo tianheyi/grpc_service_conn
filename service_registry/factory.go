@@ -9,8 +9,6 @@ const (
 	ServiceRegistryDriverConsul = "consul"
 )
 
-// agrs[0] host
-// args[1] port
 func NewServiceRegistry(driver string, config *ServiceRegistryConfig) (ServiceRegistry, error) {
 	switch driver {
 	case ServiceRegistryDriverConsul:
