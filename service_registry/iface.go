@@ -1,5 +1,7 @@
 package service_registry
 
+import "time"
+
 // 服务节点
 type ServiceNode struct {
 	Address string
@@ -8,8 +10,9 @@ type ServiceNode struct {
 
 // 服务注册中心配置信息
 type ServiceRegistryConfig struct {
-	Host string
-	Port int
+	Host     string
+	Port     int
+	WaitTime time.Duration
 }
 
 // 服务注册中心接口，负责服务注册、注销、服务发现
